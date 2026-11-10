@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: google-ai-pro-auto
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8765
